@@ -24,8 +24,24 @@ AI agent tooling is growing quickly, but many repos still miss tiny checks that 
 
 ## Quick Start
 
+Run directly from GitHub:
+
 ```bash
 npx github:aolingge/agentignore-check --path .agentignore
+```
+
+Use the Gitee mirror:
+
+```bash
+npx gitee:aolingge/agentignore-check --path .agentignore
+```
+
+Use your package manager:
+
+```bash
+npm exec github:aolingge/agentignore-check -- --path .agentignore
+pnpm dlx github:aolingge/agentignore-check --path .agentignore
+yarn dlx github:aolingge/agentignore-check --path .agentignore
 ```
 
 Generate Markdown:
