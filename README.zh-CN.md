@@ -24,17 +24,33 @@ AI Agent 工具链正在快速增长，但很多仓库缺少能直接放进 CI �
 
 ## 快速开始
 
+直接从 GitHub 运行：
+
 ```bash
 npx github:aolingge/agentignore-check --path .agentignore
 ```
 
-Generate Markdown:
+使用 Gitee 镜像：
+
+```bash
+npx gitee:aolingge/agentignore-check --path .agentignore
+```
+
+使用常见包管理器：
+
+```bash
+npm exec github:aolingge/agentignore-check -- --path .agentignore
+pnpm dlx github:aolingge/agentignore-check --path .agentignore
+yarn dlx github:aolingge/agentignore-check --path .agentignore
+```
+
+生成 Markdown：
 
 ```bash
 npx github:aolingge/agentignore-check --path .agentignore --markdown > report.md
 ```
 
-Use a score gate:
+使用分数门槛：
 
 ```bash
 npx github:aolingge/agentignore-check --path .agentignore --min-score 80
@@ -57,6 +73,11 @@ PASS  example-check  Useful signal found
 FAIL  missing-check  Add the missing guidance
 ```
 
+## Mirrors
+
+- GitHub: https://github.com/aolingge/agentignore-check
+- Gitee: https://gitee.com/aolingge/agentignore-check
+
 ## 参与贡献
 
 Good first PRs: add checks, add fixtures, improve docs, or add GitHub Actions examples.
@@ -72,4 +93,3 @@ Use this project as a repeatable gate before an AI agent marks work as done:
 
 - [Quality gate guide](docs/quality-gates.md)
 - [Copy-ready GitHub Actions example](examples/github-action.yml)
-
